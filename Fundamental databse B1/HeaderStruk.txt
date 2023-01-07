@@ -1,0 +1,38 @@
+USE [MandiriInTest]
+GO
+
+/****** Object:  Table [dbo].[HeaderStruk]    Script Date: 07/01/2023 15:23:11 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[HeaderStruk](
+	[Id] [int] NOT NULL,
+	[Nama] [varchar](100) NULL,
+	[NPWP] [varchar](100) NULL,
+	[TanggalPengukuhan] [date] NULL,
+	[Alamat] [varchar](512) NULL,
+	[Telpon] [varchar](50) NULL,
+	[TanggalTransaksi] [date] NULL,
+	[KodeKasir] [varchar](50) NULL,
+	[NomerStruk] [varchar](50) NULL,
+	[TotalBelanja] [bigint] NULL,
+	[TotalDiskon] [bigint] NULL,
+	[Kembalian] [bigint] NULL,
+	[MetodePembayaran] [varchar](50) NULL,
+	[JamPembayaran] [date] NULL,
+	[CreatedDate] [date] NULL,
+	[CreatedBy] [varchar](50) NULL,
+	[ModifiedDate] [date] NULL,
+	[ModifiedBy] [varchar](50) NULL,
+	[isActive] [bit] NULL,
+ CONSTRAINT [PK_HeaderStruk] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
